@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrapali Milind Waghmare - Research Analyst | Data Scientist | Business Analyst</title>
+    <meta name="description" content="Research Analyst and Data Scientist specializing in Machine Learning, Business Intelligence, Predictive Analytics, and Data-Driven Decision Making">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 15pt;
+            font-weight: 300;
+            letter-spacing: 0.025em;
+            line-height: 1.75em;
+            color: #7c8081;
+            background: #f3f6fa;
+        }
+
+        a {
+            color: #3fb1a3;
+            text-decoration: none;
+            border-bottom: dotted 1px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover {
+            border-bottom-color: transparent;
+        }
+
+        h1, h2, h3, h4 {
+            color: inherit;
+            font-weight: 300;
+            line-height: 1.75em;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+        }
+
+        h3 {
+            font-size: 1.15em;
+            letter-spacing: 0.025em;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1400px;
+            width: 100%;
+            padding: 0 2em;
+        }
+
+        /* Header */
+        #header {
+            background: #fff;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10000;
+            padding: 1em 2.5em;
+        }
+
+        #header h1 {
+            font-weight: 900;
+            margin: 0;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+
+        #header nav {
+            float: right;
+            letter-spacing: 0.075em;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        #header nav ul {
+            list-style: none;
+        }
+
+        #header nav ul li {
+            display: inline-block;
+            margin-left: 1.5em;
+        }
+
+        #header nav ul li a {
+            border: solid 1px transparent;
+            padding: 0.6em 0.75em;
+            display: inline-block;
+            transition: all 0.2s ease-in-out;
+            border-bottom: none;
+        }
+
+        #header nav ul li a:hover,
+        #header nav ul li a.active {
+            background: rgba(188, 202, 206, 0.15);
+        }
+
+        #header nav ul li a.contact-btn {
+            background: #000;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        /* Banner/Hero */
+        #banner {
+            background: #F2F2F5;
+            padding: 10em 0 6em 0;
+            text-align: left;
+            margin-top: 60px;
+        }
+
+        #banner .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4em;
+        }
+
+        #banner .content {
+            flex: 1;
+        }
+
+        #banner h1 {
+            font-size: 3.5em;
+            font-weight: 900;
+            margin-bottom: 0.3em;
+            color: #000;
+        }
+
+        #banner h2 {
+            font-size: 1.8em;
+            color: #666;
+            margin-bottom: 1em;
+        }
+
+        #banner p {
+            font-size: 1.1em;
+            line-height: 1.8em;
+            margin-bottom: 2em;
+            color: #7c8081;
+        }
+
+        #banner .image {
+            flex: 0 0 400px;
+        }
+
+        #banner .image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .button {
+            background: none;
+            border: solid 1px #000;
+            color: #000;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 0.8em;
+            font-weight: 900;
+            letter-spacing: 2px;
+            padding: 0.75em 2em;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            border-radius: 4px;
+            margin-right: 1em;
+        }
+
+        .button:hover {
+            background: rgba(188, 202, 206, 0.15);
+        }
+
+        .button.primary {
+            background: #000;
+            border-color: #000;
+            color: #fff !important;
+        }
+
+        .button.primary:hover {
+            background: #333;
+            border-color: #333;
+        }
+
+        /* Sections */
+        section {
+            padding: 5em 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: #000;
+        }
+
+        section > p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3em auto;
+        }
+
+        /* About Section */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 3em 0;
+            gap: 2em;
+        }
+
+        .stat-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5em;
+            color: #3fb1a3;
+            font-weight: 900;
+            margin-bottom: 0.3em;
+        }
+
+        .stat-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .credentials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3em;
+            margin-top: 3em;
+        }
+
+        .credential-box h3 {
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 1.5em;
+            border-bottom: 2px solid #3fb1a3;
+            padding-bottom: 0.5em;
+        }
+
+        .credential-item {
+            margin-bottom: 1.5em;
+        }
+
+        .credential-item h4 {
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 0.3em;
+        }
+
+        .credential-item p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .credential-box ul {
+            list-style: none;
+        }
+
+        .credential-box ul li {
+            margin-bottom: 0.8em;
+            padding-left: 1.5em;
+            position: relative;
+        }
+
+        .credential-box ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #3fb1a3;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+
+        .skill-category {
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .skill-category h3 {
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8em;
+            justify-content: center;
+        }
+
+        .skill-tag {
+            background: #f3f6fa;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #666;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2em;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 2em;
+        }
+
+        .project-category {
+            display: inline-block;
+            background: #3fb1a3;
+            color: #fff;
+            padding: 0.3em 0.8em;
+            border-radius: 4px;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1em;
+        }
+
+        .project-card h4 {
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 0.8em;
+            font-size: 1.2em;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+        }
+
+        /* Experience Section */
+        .experience-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-item {
+            background: #fff;
+            padding: 2.5em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            border-left: 4px solid #3fb1a3;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .experience-item h4 {
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 0.5em;
+        }
+
+        .company {
+            color: #3fb1a3;
+            font-weight: 400;
+            margin-bottom: 0.3em;
+        }
+
+        .duration {
+            color: #999;
+            font-size: 0.85em;
+            margin-bottom: 1em;
+        }
+
+        .experience-item > p {
+            margin-bottom: 1.5em;
+        }
+
+        .experience-item ul {
+            list-style: none;
+        }
+
+        .experience-item ul li {
+            margin-bottom: 0.8em;
+            padding-left: 1.5em;
+            position: relative;
+        }
+
+        .experience-item ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3fb1a3;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #fff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1em;
+        }
+
+        .contact-item i {
+            color: #3fb1a3;
+            font-size: 1.5em;
+            margin-top: 0.2em;
+        }
+
+        .contact-item h4 {
+            color: #000;
+            margin-bottom: 0.3em;
+            font-size: 1em;
+        }
+
+        .contact-item p {
+            color: #666;
+        }
+
+        .contact-form {
+            background: #f3f6fa;
+            padding: 2.5em;
+            border-radius: 8px;
+        }
+
+        .contact-form h4 {
+            color: #000;
+            margin-bottom: 0.5em;
+        }
+
+        .contact-form p {
+            margin-bottom: 2em;
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.75em;
+            border: solid 1px rgba(124, 128, 129, 0.2);
+            background: #fff;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.9em;
+            color: #7c8081;
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #3fb1a3;
+            outline: none;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        #footer {
+            background: #E8EEF4;
+            padding: 3em 0;
+            text-align: center;
+            color: #7c8081;
+        }
+
+        #footer p {
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 980px) {
+            #header nav {
+                display: none;
+            }
+
+            #banner .inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #banner .image {
+                flex: 0 0 300px;
+            }
+
+            #banner h1 {
+                font-size: 2.5em;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            body {
+                font-size: 13pt;
+            }
+
+            #banner {
+                padding: 6em 0 4em 0;
+            }
+
+            #banner h1 {
+                font-size: 2em;
+            }
+
+            #banner h2 {
+                font-size: 1.3em;
+            }
+
+            section {
+                padding: 3em 0;
+            }
+
+            .projects-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1>Amrapali Waghmare</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="banner">
+        <div class="container">
+            <div class="inner">
+                <div class="content">
+                    <h1>Hi, I'm Amrapali Waghmare</h1>
+                    <h2>Research Analyst | Data Scientist | Business Analyst | Machine Learning Specialist</h2>
+                    <p>Motivated data professional with 4+ years of experience uncovering insights and guiding strategic decisions through predictive analytics, machine learning, and business intelligence. Skilled in transforming complex data into actionable recommendations that drive business growth.</p>
+                    <div>
+                        <a href="#projects" class="button primary">View My Work</a>
+                        <a href="#contact" class="button">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1544739313-3b4137a6541b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Data Scientist Workspace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a Research Analyst and Data Scientist with a strong foundation in data analysis and over 4 years of experience uncovering insights and guiding strategic decisions. My expertise spans quantitative research, statistical modeling, predictive analytics, and business intelligence. I excel at transforming complex data into actionable recommendations that improve processes and deliver clear, impactful results. With a proven track record in both academic research and industry applications, I bridge the gap between technical analysis and business strategy.</p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>4+</h3>
+                    <p>Years of Professional<br><strong>Experience</strong></p>
+                </div>
+                <div class="stat-item">
+                    <h3>100+</h3>
+                    <p>Students<br><strong>Mentored</strong></p>
+                </div>
+                <div class="stat-item">
+                    <h3>85%</h3>
+                    <p>Model Accuracy<br><strong>Achieved</strong></p>
+                </div>
+            </div>
+
+            <div class="credentials">
+                <div class="credential-box">
+                    <h3>Education</h3>
+                    <div class="credential-item">
+                        <h4>Master of Management of Technology</h4>
+                        <p>Arizona State University, Mesa, AZ | GPA 3.9/4.0 | 2023-2025</p>
+                    </div>
+                    <div class="credential-item">
+                        <h4>Master of Computer Science and Engineering</h4>
+                        <p>National Institute of Technology Goa, India | 2017-2019</p>
+                    </div>
+                    <div class="credential-item">
+                        <h4>Bachelor of Information Technology</h4>
+                        <p>University of Pune, India | 2011-2015</p>
+                    </div>
+                </div>
+                <div class="credential-box">
+                    <h3>Certifications & Recognition</h3>
+                    <ul>
+                        <li>AWS Academy Data Engineering Certification (2024)</li>
+                        <li>Machine Learning - Udemy</li>
+                        <li>Research Acceptance: MIKE 2019 Conference</li>
+                        <li>Executive Officer - Ambedkar Periyar Study Circle, ASU</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <p>Comprehensive expertise in data science, machine learning, business analysis, and cloud technologies.</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Supervised Learning</span>
+                        <span class="skill-tag">Unsupervised Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Random Forest</span>
+                        <span class="skill-tag">SVM</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">K-Means</span>
+                        <span class="skill-tag">DBSCAN</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Python Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Business Intelligence</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Advanced Excel</span>
+                        <span class="skill-tag">Data Storytelling</span>
+                        <span class="skill-tag">A/B Testing</span>
+                        <span class="skill-tag">Executive Dashboards</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS EMR</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">AWS Glue</span>
+                        <span class="skill-tag">Athena</span>
+                        <span class="skill-tag">Redshift</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">HDFS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Business Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">BRD/FRD/SRS</span>
+                        <span class="skill-tag">Use Cases</span>
+                        <span class="skill-tag">User Stories</span>
+                        <span class="skill-tag">Wireframing</span>
+                        <span class="skill-tag">Agile/Jira</span>
+                        <span class="skill-tag">Gap Analysis</span>
+                        <span class="skill-tag">Process Flows</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ETL Pipelines</span>
+                        <span class="skill-tag">Data Preprocessing</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Web Scraping</span>
+                        <span class="skill-tag">Data Transformation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p>Real-world data science and analytics projects demonstrating technical expertise and business impact.</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Supply Chain">
+                    <div class="project-content">
+                        <span class="project-category">Business Intelligence</span>
+                        <h4>Supply Chain Analytics Using Tableau</h4>
+                        <p>Built a comprehensive Tableau analytics platform with real-time KPI tracking and predictive trend analysis, enabling executive-level visibility into supply chain performance and optimization opportunities.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Data Preprocessing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Fortune 500">
+                    <div class="project-content">
+                        <span class="project-category">Machine Learning</span>
+                        <h4>Analyzing Top U.S. Companies by Revenue</h4>
+                        <p>Automated data extraction pipeline with web scraping, ML-powered clustering, and GUI dashboard to identify market patterns and growth opportunities. Delivered business intelligence tool for strategic market positioning.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Web Scraping</span>
+                            <span class="skill-tag">K-Means</span>
+                            <span class="skill-tag">Tkinter GUI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="School Data">
+                    <div class="project-content">
+                        <span class="project-category">Predictive Analytics</span>
+                        <h4>Arizona Public School Data Analysis</h4>
+                        <p>Developed comprehensive school performance prediction model using clustering algorithms. Empowered data-driven educational choices through intuitive visualization and recommendation engine.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">ML</span>
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Statistical Modeling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Wine Quality">
+                    <div class="project-content">
+                        <span class="project-category">Classification</span>
+                        <h4>Wine Quality Prediction in R</h4>
+                        <p>Implemented end-to-end classification pipeline in R with comprehensive model validation and hyperparameter optimization. Delivered automated quality prediction system achieving 70% accuracy.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Random Forest</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Speech Recognition">
+                    <div class="project-content">
+                        <span class="project-category">Deep Learning</span>
+                        <h4>Bilingual Speech Code-Switch Detection</h4>
+                        <p>Built advanced classification models detecting language switching in Marathi-English bilingual speech. Achieved 85% accuracy improvement using bottleneck neural networks and custom dataset creation.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Audio Processing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Healthcare NLP">
+                    <div class="project-content">
+                        <span class="project-category">Research</span>
+                        <h4>NLP in Healthcare Industry Strategy</h4>
+                        <p>Conducted comprehensive market research on NLP applications in healthcare, analyzing industry trends, key players, and future innovation impacts on the market.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Market Research</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Healthcare Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <p>My journey combining data science, research, business analysis, and technical education.</p>
+
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <h4>Graduate Research Assistant – Big Data Analytics</h4>
+                    <p class="company">Arizona State University, Tempe, AZ</p>
+                    <p class="duration">January 2024 – May 2025</p>
+                    <ul>
+                        <li>Mentored 100+ students on datasets and ML algorithms, improving project accuracy by 20%</li>
+                        <li>Guided feature engineering, model evaluation, and data preprocessing, enhancing pipeline skills</li>
+                        <li>Reduced plagiarism from initial high rates to 0% through rigorous review processes</li>
+                        <li>Supported professors with managing student submissions, ensuring consistency and reproducibility</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Data Science and AI Trainer</h4>
+                    <p class="company">Institute of Technical Education and Research, India</p>
+                    <p class="duration">August 2022 – July 2023</p>
+                    <ul>
+                        <li>Standardized ML model evaluation frameworks using Python, R, and Tableau</li>
+                        <li>Mentored cross-functional teams on predictive modeling, data preprocessing, and visualization</li>
+                        <li>Enhanced curriculum effectiveness by integrating industry-standard practices</li>
+                        <li>Delivered 50+ hours of skills training, improving student education quality</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Data Science Fellow</h4>
+                    <p class="company">ExcelR Solutions, India</p>
+                    <p class="duration">December 2021 - June 2022 (Part-time)</p>
+                    <ul>
+                        <li>Developed interactive Tableau dashboards, enhancing decision-making efficiency</li>
+                        <li>Applied feature engineering, increasing ML model accuracy by 10%</li>
+                        <li>Built data-driven analytics solutions for business intelligence applications</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Assistant Professor - Data Science Honor Course</h4>
+                    <p class="company">Army Institute of Technology, India</p>
+                    <p class="duration">June 2021 - June 2022</p>
+                    <ul>
+                        <li>Redesigned curriculum integrating ML, Python, and visualization, increasing industry placement by 90%</li>
+                        <li>Built data-driven assessment frameworks with measurable KPIs using Python and R</li>
+                        <li>Led end-to-end analytics projects incorporating governance and visualization best practices</li>
+                        <li>Bridged academic-industry gap through real-world predictive modeling scenarios</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Full Stack Developer Trainer</h4>
+                    <p class="company">Parul Institute of Engineering, India</p>
+                    <p class="duration">July 2019 – October 2020</p>
+                    <ul>
+                        <li>Achieved 80% student placement through full-stack development training programs</li>
+                        <li>Enhanced learning outcomes through web technologies and responsive application development workshops</li>
+                        <li>Mentored students on real-world application development and deployment best practices</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Freelance Business Analyst</h4>
+                    <p class="company">Self-Owned, India</p>
+                    <p class="duration">February 2016 – February 2017</p>
+                    <ul>
+                        <li>Managed end-to-end projects from requirements gathering through deployment with 100% on-time delivery</li>
+                        <li>Collaborated with clients on business requirements, project planning, and delivery</li>
+                        <li>Coordinated with developers and designers ensuring alignment with business goals</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Web Developer</h4>
+                    <p class="company">Shatkone Consulting Pvt Ltd, India</p>
+                    <p class="duration">May 2015 – January 2016</p>
+                    <ul>
+                        <li>Designed, developed, and maintained client-facing web applications using HTML, CSS, Bootstrap, JavaScript</li>
+                        <li>Performed ongoing maintenance, content updates, and bug fixing for multiple client websites</li>
+                        <li>Collaborated with cross-functional teams to implement feature enhancements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in new opportunities and collaborations. Let's discuss how we can work together.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>amrapaliwaghmare28@gmail.com</p>
+                            <p>awaghma6@asu.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>480-742-9290</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Plano, TX (Open to relocation)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/amrapaliwaghmare-6b769b62/" target="_blank">linkedin.com/in/amrapaliwaghmare</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h4>Send a Message</h4>
+                    <p>I'd love to hear about your data science challenges and opportunities.</p>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="button primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2025 Amrapali Milind Waghmare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                const link = document.querySelector(`#header nav a[href="#${sectionId}"]`);
+
+                if (link && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    link.classList.add('active');
+                } else if (link) {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
