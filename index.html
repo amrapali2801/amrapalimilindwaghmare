@@ -438,11 +438,14 @@
             display: grid;
             /*grid-template-columns: 1fr 1.5fr;*/
             grid-template-columns: repeat(2, 1fr);
-            gap: 4em;
+            gap: 2em;
             max-width: 1200px;
             margin: 0 auto;
+            padding-top: 20px;
         }
-
+        .contact-aligntext p{
+            text-align: center;
+        }
         .contact-info {
             display: flex;
             flex-direction: column;
@@ -978,7 +981,7 @@
     <section id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p>I'm always interested in new opportunities and collaborations. Let's discuss how we can work together.</p>
+            <p class="contact-aligntext">I'm always interested in new opportunities and collaborations. Let's discuss how we can work together.</p>
 
             <div class="contact-grid">
                 <!--div class="contact-info"-->
@@ -1085,6 +1088,7 @@
 </body>
 
 </html>
+
 
 
 
